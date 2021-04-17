@@ -14,6 +14,9 @@ tmp_c <= 0;
 
 // Waddition operation
 always@(posedge clk)
-    if(valid)
+    if(valid) tmp_c<=a+b;
+    assign c=tmp_c;
+
+
     
 endmodule
